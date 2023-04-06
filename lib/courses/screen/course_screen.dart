@@ -1,11 +1,7 @@
 import 'package:cipher/courses/widgets/course_card.dart';
-import 'package:cipher/global/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
 import '../widgets/course_carousel.dart';
 import '../widgets/different_section.dart';
-import '../widgets/dropDown_widget.dart';
 
 class CourseScreen extends StatelessWidget {
   CourseScreen({super.key});

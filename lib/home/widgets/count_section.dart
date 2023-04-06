@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:countup/countup.dart';
 import 'package:flutter/material.dart';

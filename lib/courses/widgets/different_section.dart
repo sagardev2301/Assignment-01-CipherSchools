@@ -7,7 +7,7 @@ import 'package:cipher/courses/widgets/course_card.dart';
 import 'dropDown_widget.dart';
 
 class DifferentSection extends StatefulWidget {
-  DifferentSection({
+  const DifferentSection({
     Key? key,
     required this.sectionName,
     required this.list,

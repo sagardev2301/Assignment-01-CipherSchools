@@ -9,7 +9,6 @@ import 'global/providers/theme_provider.dart';
 import 'home/screen/home_screen.dart';
 import 'package:cipher/courses/screen/course_screen.dart';
 import 'package:awesome_bottom_bar/awesome_bottom_bar.dart';
-import 'package:app_popup_menu/app_popup_menu.dart';
 
 void main() {
   runApp(const MyApp());

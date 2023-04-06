@@ -1,4 +1,3 @@
-import 'package:cipher/global/widgets/main_title.dart';
 import 'package:cipher/home/widgets/count_section.dart';
 import 'package:cipher/home/widgets/custom_carousel.dart';
 import 'package:cipher/home/widgets/intro_text.dart';

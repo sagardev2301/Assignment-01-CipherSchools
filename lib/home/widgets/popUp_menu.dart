@@ -20,14 +20,6 @@ class _CustomPopUpMenuState extends State<CustomPopUpMenu> {
         size: 30,
       ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      // items: const [
-      //   "Home",
-      //   "Creator Access",
-      //   "Live Reviews",
-      //   "Community",
-      //   "Explore Courses",
-      //   "SignIn"
-      // ],
       color: Theme.of(context).appBarTheme.backgroundColor,
       menuItems: [
         PopupMenuItem(
