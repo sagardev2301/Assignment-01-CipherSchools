@@ -11,13 +11,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size(double.infinity, 60),
-        child: AppBar(
-          title: mainTitle,
-          elevation: 2,
-        ),
-      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

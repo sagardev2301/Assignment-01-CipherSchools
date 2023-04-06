@@ -17,13 +17,9 @@ class IntroText extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               "Welcome to ",
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
-                fontSize: 35,
-              ),
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             Text(
               "the ",
@@ -46,25 +42,18 @@ class IntroText extends StatelessWidget {
                 fontSize: 35,
               ),
             ),
-            const Text(
+            Text(
               "of Learning!",
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
-                fontSize: 35,
-              ),
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ],
         ),
         const SizedBox(
           height: 20,
         ),
-        const Text(
+        Text(
           "Start Learning by best creators for",
-          style: TextStyle(
-            color: Color.fromRGBO(0, 0, 0, .7),
-            fontSize: 20,
-          ),
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         const SizedBox(
           height: 5,
@@ -101,16 +90,13 @@ class IntroText extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text(
+                      Text(
                         "50+",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold),
+                        style: Theme.of(context).textTheme.labelMedium,
                       ),
                       Text(
                         "Mentors",
-                        style: TextStyle(color: Colors.grey[700], fontSize: 12),
+                        style: Theme.of(context).textTheme.labelSmall,
                       )
                     ],
                   )
@@ -125,13 +111,9 @@ class IntroText extends StatelessWidget {
               ),
               Column(
                 children: [
-                  const Text(
+                  Text(
                     "4.8/5",
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
+                    style: Theme.of(context).textTheme.labelMedium,
                   ),
                   Row(
                     children: [
@@ -165,7 +147,7 @@ class IntroText extends StatelessWidget {
                       ),
                       Text(
                         "Ratings",
-                        style: TextStyle(color: Colors.grey[700], fontSize: 12),
+                        style: Theme.of(context).textTheme.labelSmall,
                       )
                     ],
                   )

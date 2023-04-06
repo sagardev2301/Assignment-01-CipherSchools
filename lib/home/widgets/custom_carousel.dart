@@ -7,7 +7,9 @@ class CustomCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(alignment: Alignment.center, children: [
+    return Stack(
+      alignment: Alignment.center, 
+      children: [
       CarouselSlider(
         options: CarouselOptions(
           // clipBehavior: Clip.hardEdge,

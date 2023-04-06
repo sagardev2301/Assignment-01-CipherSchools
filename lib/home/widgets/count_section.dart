@@ -67,10 +67,7 @@ class CountSection extends StatelessWidget {
                   Text(
                     countList[index]['title'],
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.grey[850],
-                      fontSize: 15,
-                    ),
+                    style: Theme.of(context).textTheme.bodySmall,
                   )
                 ],
               ),
