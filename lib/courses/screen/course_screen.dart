@@ -7,8 +7,7 @@ class CourseScreen extends StatelessWidget {
   CourseScreen({super.key});
   List<Map<String, dynamic>> courseDetail = [
     {
-      "imageUrl":
-          'https://www.vtnetzwelt.com/wp-content/uploads/2019/03/flutter-app-development.jpg',
+      "imageUrl": 'assets/images/flutter-app-development.jpg',
       "label": 'App Development',
       "courseName": 'App Development With Flutter',
       "description": '',
@@ -17,8 +16,7 @@ class CourseScreen extends StatelessWidget {
       "contentTime": 25.5,
     },
     {
-      "imageUrl":
-          'https://leverageedu.com/blog/wp-content/uploads/2019/11/Short-Term-Courses-after-BTech.jpg',
+      "imageUrl": 'assets/images/short_course.jpg',
       "label": 'Web Development',
       "courseName": 'Full-stack Development using MERN',
       "description": '',
@@ -27,8 +25,7 @@ class CourseScreen extends StatelessWidget {
       "contentTime": 45.7,
     },
     {
-      "imageUrl":
-          'https://www.incimages.com/uploaded_files/image/1920x1080/getty_933383882_2000133420009280345_410292.jpg',
+      "imageUrl": 'assets/images/course.jpg',
       "label": 'Languify',
       "courseName": 'FREE IELTS/TOEFL Mock Assessment',
       "description": 'AI genereated feedback and scores',
@@ -37,24 +34,13 @@ class CourseScreen extends StatelessWidget {
       "contentTime": 0,
     },
     {
-      "imageUrl":
-          'https://files.realpython.com/media/Newbie_Watermarked.a9319218252a.jpg',
+      "imageUrl": 'assets/images/python.webp',
       "label": 'Programming',
       "courseName": 'Python & Django For Beginners',
       "description": '',
       "instructorName": 'CipherSchools',
       "noOfVideos": 15,
       "contentTime": 5.7,
-    },
-    {
-      'imageUrl':
-          'https://www.incimages.com/uploaded_files/image/1920x1080/getty_933383882_2000133420009280345_410292.jpg',
-      'label': 'Languify',
-      'courseName': 'FREE IELTS/TOEFL Mock Assessment',
-      'description': 'AI genereated feedback and scores',
-      'instructorName': 'Languify',
-      'noOfVideos': 0,
-      'contentTime': 0,
     }
   ];
 
@@ -73,7 +59,7 @@ class CourseScreen extends StatelessWidget {
                 isWidgetAvailable: true,
                 list: courseDetail.map((e) {
                   return CourseCard(
-                      imageUrl: e['imageUrl'],
+                      imagePath: e['imageUrl'],
                       label: e['label'],
                       courseName: e['courseName'],
                       description: e['description'],
@@ -86,7 +72,7 @@ class CourseScreen extends StatelessWidget {
                 isWidgetAvailable: false,
                 list: courseDetail.map((e) {
                   return CourseCard(
-                      imageUrl: e['imageUrl'],
+                      imagePath: e['imageUrl'],
                       label: e['label'],
                       courseName: e['courseName'],
                       description: e['description'],

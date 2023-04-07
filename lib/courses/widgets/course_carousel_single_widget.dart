@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SingleCarouselWidget extends StatelessWidget {
@@ -8,12 +7,12 @@ class SingleCarouselWidget extends StatelessWidget {
       required this.type,
       required this.instructorImagePath,
       required this.instructorName,
-      required this.imageUrl,
+      required this.imagePath,
       // required this.carouselController,
       required this.method});
   final String courseTitle;
   final String type;
-  final String imageUrl;
+  final String imagePath;
   final String instructorImagePath;
   final String instructorName;
   final String method;
@@ -26,8 +25,8 @@ class SingleCarouselWidget extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           height: 230,
-          child: Image.network(
-            imageUrl,
+          child: Image.asset(
+            imagePath,
             fit: BoxFit.cover,
           ),
         ),
@@ -61,7 +60,7 @@ class SingleCarouselWidget extends StatelessWidget {
               ),
               Chip(
                 padding: const EdgeInsets.all(0),
-                backgroundColor: const Color(0xff3D455A),
+                backgroundColor:const Color.fromARGB(255, 98, 105, 129),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
                 label: Text(
@@ -117,7 +116,6 @@ class SingleCarouselWidget extends StatelessWidget {
             ],
           ),
         ),
-        
       ],
     );
   }

@@ -23,36 +23,42 @@ class _CustomPopUpMenuState extends State<CustomPopUpMenu> {
       color: Theme.of(context).appBarTheme.backgroundColor,
       menuItems: [
         PopupMenuItem(
+          height: 30,
           child: Text(
             "Home",
             style: Theme.of(context).textTheme.bodySmall,
           ),
         ),
         PopupMenuItem(
+          height: 30,
           child: Text(
             "Creator Access",
             style: Theme.of(context).textTheme.bodySmall,
           ),
         ),
         PopupMenuItem(
+          height: 30,
           child: Text(
             "Live Reviews",
             style: Theme.of(context).textTheme.bodySmall,
           ),
         ),
         PopupMenuItem(
+          height: 30,
           child: Text(
             "Community",
             style: Theme.of(context).textTheme.bodySmall,
           ),
         ),
         PopupMenuItem(
+          height: 30,
           child: Text(
             "Explore Courses",
             style: Theme.of(context).textTheme.bodySmall,
           ),
         ),
         PopupMenuItem(
+          height: 30,
           child: Text(
             "SignIn",
             style: Theme.of(context).textTheme.bodySmall,

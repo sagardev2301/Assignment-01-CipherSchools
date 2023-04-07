@@ -1,9 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-
 import 'package:cipher/courses/widgets/course_card.dart';
-
 import 'dropDown_widget.dart';
 
 class DifferentSection extends StatefulWidget {
@@ -22,7 +20,6 @@ class DifferentSection extends StatefulWidget {
 }
 
 class _DifferentSectionState extends State<DifferentSection> {
-  int _currentIndex = 0;
   CarouselController carouselController = CarouselController();
 
   @override
@@ -52,15 +49,13 @@ class _DifferentSectionState extends State<DifferentSection> {
               items: widget.list,
               options: CarouselOptions(
                 enableInfiniteScroll: false,
-                aspectRatio: 220 / 150,
+                aspectRatio: 215 / 150,
                 viewportFraction: 0.5,
-                initialPage: 0,
+                initialPage: 1,
+                disableCenter: true,
+                pageSnapping: false,
+                scrollPhysics: const RangeMaintainingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
-                onPageChanged: (index, reason) {
-                  setState(() {
-                    _currentIndex = index;
-                  });
-                },
               ),
             ),
           ],

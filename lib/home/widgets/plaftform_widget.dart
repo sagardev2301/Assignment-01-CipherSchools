@@ -7,12 +7,12 @@ class PlaftformWidget extends StatelessWidget {
       required this.title,
       required this.person,
       required this.iconData,
-      required this.imageUrl});
+      required this.imagePath});
   final String shortTitle;
   final String title;
   final String person;
   final IconData iconData;
-  final String imageUrl;
+  final String imagePath;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,8 +27,8 @@ class PlaftformWidget extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: Image.network(
-              imageUrl,
+            child: Image.asset(
+              imagePath,
               fit: BoxFit.fill,
             ),
           ),

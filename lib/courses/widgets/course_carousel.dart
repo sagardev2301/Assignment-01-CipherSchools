@@ -17,8 +17,7 @@ class _CourseCarouselState extends State<CourseCarousel> {
   List<SingleCarouselWidget> items = const [
     SingleCarouselWidget(
         // carouselController: carouselController,
-        imageUrl:
-            'https://www.vtnetzwelt.com/wp-content/uploads/2019/03/flutter-app-development.jpg',
+        imagePath: 'assets/images/flutter-app-development.jpg',
         courseTitle: 'App Development With Flutter',
         type: 'App Development',
         instructorImagePath: 'assets/images/Cipherschools_icon.png',
@@ -26,8 +25,7 @@ class _CourseCarouselState extends State<CourseCarousel> {
         method: 'Watch'),
     SingleCarouselWidget(
         // carouselController: carouselController,
-        imageUrl:
-            'https://learnenglish.britishcouncil.org/sites/podcasts/files/2021-09/GettyImages-1072206958_2.jpg',
+        imagePath: 'assets/images/short_course.jpg',
         courseTitle: 'FREE Mock IELTS/TOEFL',
         type: 'Assessment test',
         instructorImagePath: 'assets/images/Cipherschools_icon.png',
@@ -35,8 +33,7 @@ class _CourseCarouselState extends State<CourseCarousel> {
         method: 'Try now'),
     SingleCarouselWidget(
         // carouselController: carouselController,
-        imageUrl:
-            'https://leverageedu.com/blog/wp-content/uploads/2019/11/Short-Term-Courses-after-BTech.jpg',
+        imagePath: 'assets/images/course.jpg',
         courseTitle: 'Full-stack Development using MERN',
         type: 'Web Development',
         instructorImagePath: 'assets/images/Cipherschools_icon.png',
@@ -44,8 +41,7 @@ class _CourseCarouselState extends State<CourseCarousel> {
         method: 'Watch'),
     SingleCarouselWidget(
         // carouselController: carouselController,
-        imageUrl:
-            'https://files.realpython.com/media/Newbie_Watermarked.a9319218252a.jpg',
+        imagePath: 'assets/images/python.webp',
         courseTitle: 'Python & Django For Beginners',
         type: 'Programming',
         instructorImagePath: 'assets/images/Cipherschools_icon.png',

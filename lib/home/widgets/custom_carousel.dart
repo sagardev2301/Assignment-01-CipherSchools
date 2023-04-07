@@ -7,15 +7,12 @@ class CustomCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center, 
-      children: [
+    return Stack(alignment: Alignment.center, children: [
       CarouselSlider(
         options: CarouselOptions(
-          // clipBehavior: Clip.hardEdge,
-          height: 245,
+          height: 240,
           aspectRatio: 2.0,
-          viewportFraction: 0.6,
+          viewportFraction: 0.50,
           initialPage: 0,
           reverse: false,
           autoPlay: true,
@@ -23,8 +20,10 @@ class CustomCarousel extends StatelessWidget {
           autoPlayAnimationDuration: const Duration(milliseconds: 800),
           autoPlayCurve: Curves.fastOutSlowIn,
           enlargeCenterPage: true,
-          enlargeFactor: 0.2,
+          enlargeFactor: 0.4,
+          enlargeStrategy: CenterPageEnlargeStrategy.zoom,
           scrollDirection: Axis.horizontal,
+          scrollPhysics: const ClampingScrollPhysics(),
         ),
         disableGesture: true,
         items: const [
@@ -51,24 +50,32 @@ class CustomCarousel extends StatelessWidget {
           ),
         ],
       ),
-      //TODO : Implement Gradient Effect
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: 300,
+            width: 195,
+            height: 200,
             decoration: const BoxDecoration(
                 gradient: RadialGradient(center: Alignment.centerLeft, colors: [
               Colors.white,
+              Colors.white54,
+              Colors.white30,
               Colors.transparent,
             ])),
           ),
           Container(
-            width: 300,
+            width: 195,
+            height: 200,
             decoration: const BoxDecoration(
                 gradient: RadialGradient(
                     center: Alignment.centerRight,
-                    colors: [Colors.white, Colors.transparent])),
+                    colors: [
+                  Colors.white,
+                  Colors.white54,
+                  Colors.white30,
+                  Colors.transparent
+                ])),
           )
         ],
       )

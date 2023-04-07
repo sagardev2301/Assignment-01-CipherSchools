@@ -29,8 +29,7 @@ class HomeScreen extends StatelessWidget {
                       'Unlock your learning potential with CipherSchools',
                   title: 'Best platform for the students',
                   person: 'Students',
-                  imageUrl:
-                      'https://ik.imagekit.io/cipherschools/CipherSchools/for-student_nm1kTXQDf.jpg',
+                  imagePath: 'assets/images/for_student.webp',
                   iconData: Icons.school_outlined,
                 ),
                 SizedBox(
@@ -41,13 +40,11 @@ class HomeScreen extends StatelessWidget {
                       'Empowering students to open their minds to utmost knowledge',
                   title: 'Be the mentor you never had',
                   person: 'Creators',
-                  imageUrl:
-                      'https://ik.imagekit.io/cipherschools/CipherSchools/for-creator_sNs5MAVE7.jpg',
+                  imagePath: 'assets/images/for_creator.webp',
                   iconData: Icons.handyman_outlined,
                 ),
               ],
             ),
-            
             const SizedBox(
               height: 30,
             ),
